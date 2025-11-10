@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        border: 'hsl(214.3 31.8% 91.4%)',
         calculator: {
           display: '#1a1a1a',
           body: '#f5f5f5',
