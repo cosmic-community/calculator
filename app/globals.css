@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+}
+
+@layer utilities {
+  .calculator-button {
+    @apply w-full h-16 rounded-lg font-semibold text-lg transition-all duration-150 active:scale-95;
+  }
+  
+  .number-button {
+    @apply calculator-button bg-white hover:bg-gray-100 text-gray-900 shadow-sm;
+  }
+  
+  .operation-button {
+    @apply calculator-button bg-blue-500 hover:bg-blue-600 text-white shadow-md;
+  }
+  
+  .equals-button {
+    @apply calculator-button bg-green-500 hover:bg-green-600 text-white shadow-md;
+  }
+  
+  .clear-button {
+    @apply calculator-button bg-red-500 hover:bg-red-600 text-white shadow-md;
+  }
+  
+  .backspace-button {
+    @apply calculator-button bg-gray-300 hover:bg-gray-400 text-gray-900 shadow-sm;
+  }
+}
